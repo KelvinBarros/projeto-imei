@@ -11,6 +11,13 @@
     font-family: 'Roboto Condensed';
     src: url(fontes/RobotoCondensed-VariableFont_wght.ttf);
 }
+/* Color Theme Swatches in Hex */
+.Natureza-1-hex { color: #202426; }
+.Natureza-2-hex { color: #6C733D; }
+.Natureza-3-hex { color: #9DA65D; }
+.Natureza-4-hex { color: #8C8C88; }
+.Natureza-5-hex { color: #F2F2F2; }
+
 
 * {
     margin: 0px;
@@ -18,9 +25,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html, body{
+    background-color:#202426;
+}
 
 main{
-    max-width: 600px; 
+    max-width: 800px; 
     margin: auto;
     text-align: justify;
 } 
@@ -32,9 +42,10 @@ main p{
 }
 
 header{
-    background-color: #F2D0A7;
-    width: 100vw;
+    background-color: #F2F2F2;
+    box-shadow: 0px 1px 7px black;
     padding: 10px;
+    
 }
  header h1 {
     padding: 10px;
@@ -50,6 +61,37 @@ header p{
     font-size: 1.2em;
 }
 
-#gerador{
-
+nav{/*resolver sombra*/
+    background-color: #6C733D;
+    
+    padding: 10px;
 }
+
+nav a{
+   
+    margin: 0px 15px;
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+a:hover{
+    padding: 10px;
+    background-color: #9DA65D;
+}
+
+article{
+    background-color: #411e12;
+}
+
+article p{
+    font-family:'Roboto Condensed', Times, serif ;
+    background-color: #8C8C88 ;
+    font-size: 1.3em;
+    line-height: 40px;
+    padding: 0px 10px;
+}
+
+
+
+
+
