@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'Toony Sans';
+    src: url(fontes/conthrax-sb.otf) format(opentype);
+    font-size: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url(fontes/RobotoCondensed-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+main{
+    max-width: 600px; 
+    margin: auto;
+    text-align: justify;
+} 
+main p{
+    background-color: #ffd8c1;
+    padding: 5px;
+    text-indent: 20px;
+    font: 20;
+}
+
+header{
+    background-color: #F2D0A7;
+    width: 100vw;
+    padding: 10px;
+}
+ header h1 {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Toony Sans';
+    font-size: 5em;
+}
+
+header p{
+    text-align: center;
+    font-family: 'Roboto Condensed', Times, serif;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#gerador{
+
+}
