@@ -6,17 +6,14 @@
     font-size: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'Bebas';
+    src: url(fontes/Bebas-Regular.otf);
+}
 @font-face {
     font-family: 'Roboto Condensed';
     src: url(fontes/RobotoCondensed-VariableFont_wght.ttf);
 }
-/* Color Theme Swatches in Hex */
-.Natureza-1-hex { color: #202426; }
-.Natureza-2-hex { color: #6C733D; }
-.Natureza-3-hex { color: #9DA65D; }
-.Natureza-4-hex { color: #8C8C88; }
-.Natureza-5-hex { color: #F2F2F2; }
 
 
 * {
@@ -25,8 +22,18 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root{
+    --cor1:#f0f0f0;
+    --cor2:#2CB2DB;
+    --cor3:#9DA65D;
+    --cor4:#8C8C88;
+    --cor5:#F2F2F2;
+
+    --font-titulo:'Bebas',sans-serif; 
+}
+
 html, body{
-    background-color:#202426;
+    background-color:var(--cor1);
 }
 
 main{
@@ -43,17 +50,17 @@ main p{
 }
 
 header{
-    background-color: #F2F2F2;
+    background-image: linear-gradient(to right, rgb(255, 249, 249), rgb(230, 250, 255), white);
     box-shadow: 0px 1px 7px black;
-    padding: 10px;
+    padding: 0px;
     
     
 }
  header h1 {
     padding: 10px;
     text-align: center;
-    font-family: 'Toony Sans';
-    font-size: 5em;
+    font-family: 'Bebas', sans-serif;
+    font-size: 6em;
 }
 
 header p{
@@ -64,48 +71,51 @@ header p{
 }
 
 nav{/*resolver sombra*/
-    background-color: #4d532b;
-    
+    background-color: var(--cor2);
     padding: 10px;
+    color: black;
 }
 
 nav a{
-   
+    font-weight: bold;
     margin: 0px 15px;
-    color: #F2F2F2;
+    color: var(--cor5);
     text-decoration: none;
 }
 
 a:hover{
     padding: 10px;
-    background-color: #9DA65D;
+    background-color: var(--cor2);
 }
 
 article{
-    background-color: #F2F2F2;
-    border-radius: 0px 0px 10px 10px;
-    height: 400px;
+
+    background-color: var(--cor5);
+    border-radius: 5px;
+    min-height: auto;
     padding: 15px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.171);
 }
 
 article p{
     font-family:'Roboto Condensed', Times, serif ;
-   
-    font-size: 1.3em;
-    line-height: 40px;
+    text-indent: 50px;
+    font-size: 1.2em;
+    line-height: 50px;
     padding: 0px 10px;
     
 }
 
 article h1{
     font-size: 2em;
-    text-indent: 30px;
+    text-indent: 60px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 div#gerador{
-    background-color:#6C733D;
+    background-color:var(--cor2);
     height: 100px;
-    box-shadow: 1px 10px 10px 0px rgba(0, 0, 0, 0.395);
+    box-shadow: 1px 2px 15px 0px rgba(0, 0, 0, 0.395);
     border-radius: 10px;
     margin-top: 40px;
 }
@@ -126,9 +136,10 @@ div#gerador{
 }
 
 .botao:hover{
-    background-color: #2e321a;
-    box-shadow: 1px 1px 10px black;
+    background-color: #6ac2dd;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.534);
     transition: 0.4s;
+    color: black;
 }
 
 .botaocop{
@@ -147,24 +158,30 @@ div#gerador{
 }
 
 .botaocop:hover{
-    background-color: #2e321a;
-    box-shadow: 1px 1px 10px black;
+    background-color: #6ac2dd;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.534);
     transition: 0.4s;
+    color: black;
+
 }
 
 footer{
-    background-color: #4d532b;
+    background-color: #6ac2dd;
+    text-align: center;
     font-family: 'Roboto Condensed', Times, serif ;
 }
 
-footer p{
+footer  p{
     padding: 10px;
-    margin-top: 20px;
+    width: 500px;
+    margin-top: 40px;
     font-weight: lighter;
     font-size: 0.7em;
+    text-align: justify;
 }
 
-#copy{
+footer > #direitos{
     color: white;
-    text-align: end;
+    text-align: center;
+    width: 96vw;
 }
