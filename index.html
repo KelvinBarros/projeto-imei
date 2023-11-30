@@ -22,6 +22,7 @@
     </nav>
     <main>
         <article>
+            <h1>O que oferecemos?</h1>
             <p>
                 Nosso serviço oferece uma ferramenta simples e confiável para a geração de IMEIs válidos para uma ampla
                 gama
@@ -31,20 +32,41 @@
                 fácil, garantindo a precisão e conformidade com os padrões internacionais.
             </p>
             <p>
-                Explore nossa plataforma para gerar IMEIs para suas necessidades de teste, desenvolvimento ou para
-                qualquer
-                finalidade que exija números de identificação únicos. Garantimos a geração de IMEIs válidos e
-                funcionais,
-                proporcionando praticidade e confiança em suas atividades relacionadas a dispositivos móveis.
+                Basta clicar no botão abaixo para gerar IMEIs
             </p>
+
         </article>
         <div id="gerador">
             <label for="imei"></label>
-            <input type="submit" value="Gerar numero de IMEI:" onclick="gerar()">
-            <input type="text" value size="17" id="imeinum">
+            <input class="botao" type="submit" value="Gerar numero de IMEI" onclick="gerar()">
+            <input class="botao" type="text" value size="17" id="imeinum">
+            
+            <button class="botaocop" onclick="copiarTexto()">Copiar</button>
+
         </div>
     </main>
 
+    <footer>
+        <p>
+
+            Nosso gerador de IMEI é uma ferramenta destinada a fins legítimos, como testes, desenvolvimento e outras
+            atividades lícitas. Ressaltamos a importância do uso consciente e ético desta ferramenta para garantir a
+            integridade e confiança em suas práticas. <br>
+
+            Alertamos que o mau uso do gerador de IMEI para atividades ilegais, como clonagem de dispositivos ou outras
+            práticas ilícitas, é estritamente proibido. Não nos responsabilizamos por quaisquer consequências legais que
+            os usuários possam enfrentar ao violar leis ou regulamentações ao utilizar nossa ferramenta. <br>
+
+            Reforçamos a necessidade de cumprir as leis e regulamentos locais ao utilizar nosso serviço. Ao acessar e
+            utilizar o gerador de IMEI, você concorda em agir de maneira ética e legal. <br>
+
+            Agradecemos pela compreensão e colaboração para garantir um uso responsável desta ferramenta."
+        </p>
+
+        <p id="copy">
+            Desenvolvido por Kelvin B. Dutra. Todos os direitos reservados &copy; .
+        </p>
+    </footer>
 
 
 
@@ -83,6 +105,13 @@
             t = str.join('');
             t = t.substr(0, len);
             document.getElementById('imeinum').value = t;
+        }
+
+        function copiarTexto() {
+            var texto = document.getElementById('imeinum');
+            texto.select();
+            document.execCommand('copy');
+           
         }
 
     </script>

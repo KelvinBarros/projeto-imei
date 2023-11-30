@@ -33,9 +33,10 @@ main{
     max-width: 800px; 
     margin: auto;
     text-align: justify;
+
 } 
 main p{
-    background-color: #ffd8c1;
+    
     padding: 5px;
     text-indent: 20px;
     font: 20;
@@ -45,6 +46,7 @@ header{
     background-color: #F2F2F2;
     box-shadow: 0px 1px 7px black;
     padding: 10px;
+    
     
 }
  header h1 {
@@ -62,7 +64,7 @@ header p{
 }
 
 nav{/*resolver sombra*/
-    background-color: #6C733D;
+    background-color: #4d532b;
     
     padding: 10px;
 }
@@ -80,18 +82,89 @@ a:hover{
 }
 
 article{
-    background-color: #411e12;
+    background-color: #F2F2F2;
+    border-radius: 0px 0px 10px 10px;
+    height: 400px;
+    padding: 15px;
 }
 
 article p{
     font-family:'Roboto Condensed', Times, serif ;
-    background-color: #8C8C88 ;
+   
     font-size: 1.3em;
     line-height: 40px;
     padding: 0px 10px;
+    
 }
 
+article h1{
+    font-size: 2em;
+    text-indent: 30px;
+}
 
+div#gerador{
+    background-color:#6C733D;
+    height: 100px;
+    box-shadow: 1px 10px 10px 0px rgba(0, 0, 0, 0.395);
+    border-radius: 10px;
+    margin-top: 40px;
+}
 
+.botao {
+    background-color: rgba(0, 0, 0, 0.69);
+    color: aliceblue;
+    padding: 5px;
+    margin: 10px;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1em;
+    border: none;
+    box-shadow: 1px 1px 5px  rgba(0, 0, 0, 0.497);
+    text-align: center;
+}
 
+.botao:hover{
+    background-color: #2e321a;
+    box-shadow: 1px 1px 10px black;
+    transition: 0.4s;
+}
 
+.botaocop{
+    background-color: rgba(0, 0, 0, 0.69);
+    color: aliceblue;
+    padding: 5px;
+    margin: 10px;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1em;
+    border: none;
+    box-shadow: 1px 1px 5px  rgba(0, 0, 0, 0.497);
+    text-align: center;
+}
+
+.botaocop:hover{
+    background-color: #2e321a;
+    box-shadow: 1px 1px 10px black;
+    transition: 0.4s;
+}
+
+footer{
+    background-color: #4d532b;
+    font-family: 'Roboto Condensed', Times, serif ;
+}
+
+footer p{
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: lighter;
+    font-size: 0.7em;
+}
+
+#copy{
+    color: white;
+    text-align: end;
+}
