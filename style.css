@@ -50,7 +50,9 @@ main p{
 }
 
 header{
-    background-image: linear-gradient(to right, rgb(255, 249, 249), rgb(230, 250, 255), white);
+    background: black url(imagens/pexels-jonas-svidras-785418.jpg) center left no-repeat fixed;
+   
+    background-size: cover;
     box-shadow: 0px 1px 7px black;
     padding: 0px;
     
@@ -60,7 +62,8 @@ header{
     padding: 10px;
     text-align: center;
     font-family: 'Bebas', sans-serif;
-    font-size: 6em;
+    font-size: 4em;
+    
 }
 
 header p{
@@ -69,6 +72,8 @@ header p{
     font-weight: bold;
     font-size: 1.2em;
 }
+
+
 
 nav{/*resolver sombra*/
     background-color: var(--cor2);
