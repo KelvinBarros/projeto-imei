@@ -24,7 +24,7 @@
 
 :root{
     --cor1:#f0f0f0;
-    --cor2:#2CB2DB;
+    --cor2:#2cb2db65;
     --cor3:#9DA65D;
     --cor4:#8C8C88;
     --cor5:#F2F2F2;
@@ -151,7 +151,7 @@ div#gerador{
 .botao:hover{
     background-color: #6ac2dd;
     border: 1px solid black;
-    transition: 0.4s;
+    transition: 0.2s;
     color: black;
 }
 
@@ -174,7 +174,7 @@ div#gerador{
 .botaocop:hover{
     background-color: #6ac2dd;
     border: 1px solid black;
-    transition: 0.4s;
+    transition: 0.2s;
     color: black;
 
 }
