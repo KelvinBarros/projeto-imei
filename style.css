@@ -77,20 +77,24 @@ header p{
 
 nav{/*resolver sombra*/
     background-color: var(--cor2);
-    padding: 10px;
+    padding: 15px;
+    
     color: black;
 }
 
 nav a{
     font-weight: bold;
     margin: 0px 15px;
-    color: var(--cor5);
+    padding: 10px;
+    color: black;
     text-decoration: none;
 }
 
 a:hover{
     padding: 10px;
     background-color: var(--cor2);
+    text-decoration-line: underline;
+    
 }
 
 article{
@@ -106,7 +110,7 @@ article p{
     font-family:'Roboto Condensed', Times, serif ;
     text-indent: 50px;
     font-size: 1.2em;
-    line-height: 50px;
+    line-height: 35px;
     padding: 0px 10px;
     
 }
