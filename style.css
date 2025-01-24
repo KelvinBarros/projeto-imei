@@ -99,6 +99,8 @@ a:hover{
 
 article{
     margin: 10px 0px;
+    margin-top: 50px;
+
     background-color: var(--cor5);
     border-radius: 5px;
     min-height: auto;
@@ -184,23 +186,47 @@ div#gerador{
     
 }
 
-footer{
-    background-color: #6ac2dd;
+footer {
     text-align: center;
-    font-family: 'Roboto Condensed', Times, serif ;
+    background-color: rgb(39, 39, 39);
+    padding: 20px;
+    margin-top: 100px;
+    border-top: 1px solid var(--primary-color);
+    box-shadow: 0 -2px 5px var(--cor2);
 }
 
-footer  p{
-    padding: 10px;
-    width: 500px;
-    margin-top: 40px;
-    font-weight: lighter;
-    font-size: 0.7em;
-    text-align: justify;
+footer p {
+    font-size: 0.9rem;
+    color: var(--cor1);
+    margin-bottom: 10px;
 }
 
-footer > #direitos{
-    color: white;
-    text-align: center;
-    width: 96vw;
+footer #direitos {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: var(--cor5);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    article h1 {
+        font-size: 1.8rem;
+    }
+
+    .botao, .botaocop {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    #gerador {
+        flex-direction: column;
+    }
 }
