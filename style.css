@@ -34,11 +34,14 @@
 
 html, body{
     background-color:var(--cor1);
+    
 }
 
 main{
+    display: grid;
+    justify-self: center;
     max-width: 800px; 
-    margin: auto;
+    
     text-align: justify;
 
 } 
